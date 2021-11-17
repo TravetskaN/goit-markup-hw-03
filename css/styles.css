@@ -17,9 +17,21 @@
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  margin: 0;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px 0 15 px;
+  margin: 0 auto;
+}
+.header-container {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .logo {
   font-family: Raleway;
+  padding-top: 24px;
 }
 .logo-text-first {
   color: var(--accent-color);
@@ -64,17 +76,23 @@
 .navigation-contacts:hover {
   color: var(--accent-color);
 }
+.navigation-container {
+  display: flex;
+}
 .hero {
+  padding: 200px 0;
   background-color: var(--secondary-bg-color);
+  text-align: center;
 }
 .hero-text {
   color: var(--primary-bg-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 
 .hero-button {
@@ -86,11 +104,17 @@
   line-height: 1.9;
   display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
   border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
+  min-width: 200px;
+  text-align: center;
+  border: 1px solid transparent;
 }
+
 .work-styles {
   color: var(--title-text-color);
   font-weight: 700;
@@ -98,6 +122,7 @@
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  background-color: yellowgreen;
 }
 
 .direction-work {
@@ -176,11 +201,20 @@
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  margin-right: 8px;
+  padding: 6px 22px;
+  min-width: 73px;
+  text-align: center;
 }
 .filter:hover,
 .filter:focus {
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
+}
+.filter-flex {
+  display: flex;
 }
 .portfolio {
   list-style: none;
@@ -203,4 +237,8 @@ ul {
 }
 .link {
   text-decoration: none;
+}
+.list {
+  padding: 0;
+  margin: 0;
 }
