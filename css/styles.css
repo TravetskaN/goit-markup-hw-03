@@ -122,9 +122,15 @@
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  background-color: yellowgreen;
+  display: flex;
+  margin-top: 94px;
+  margin-bottom: 10px;
+  text-align: center;
 }
-
+.work-styles-about {
+  margin-bottom: 94px;
+  text-align: center;
+}
 .direction-work {
   color: var(--title-text-color);
   font-weight: 700;
@@ -132,6 +138,14 @@
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.direction-work-sections {
+  display: flex;
+  text-align: center;
+  margin-bottom: 94px;
 }
 .team,
 .activity,
@@ -145,6 +159,8 @@
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  margin-top: 0px;
 }
 .our-team {
   color: var(--title-text-color);
@@ -153,7 +169,22 @@
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  padding-left: 68px;
+  padding-right: 68px;
 }
+.our-team-people {
+  border: 2px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 94px;
+  background-color: var(--primary-bg-color);
+}
+
 .our-team-professions {
   font-size: 16px;
   line-height: 1.2;
@@ -206,7 +237,6 @@
   margin-right: 8px;
   padding: 6px 22px;
   min-width: 73px;
-  text-align: center;
 }
 .filter:hover,
 .filter:focus {
