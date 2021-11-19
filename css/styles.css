@@ -9,10 +9,20 @@
   --text-shadow-color: 0px 4px 4px rgba(0, 0, 0, 0.25);
   --logo-color: #000000;
 }
-ul {
+ul,
+li,
+h1,
+h2,
+h3,
+p {
   padding-inline-start: 0;
   margin-block-start: 0;
   margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+img {
+  display: block;
 }
 .body {
   background-color: var(--primary-bg-color);
@@ -36,10 +46,12 @@ ul {
   padding: 94px 0;
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .header-container {
   display: flex;
   align-items: center;
-  border: 1px solid #ececec;
 }
 .main-navigation {
   display: flex;
@@ -162,8 +174,11 @@ ul {
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  display: flex;
   margin-bottom: 10px;
+}
+
+.work-route {
+  padding-top: 0px;
 }
 
 .direction-work {
@@ -178,19 +193,13 @@ ul {
 }
 .direction-work-sections {
   display: flex;
-  text-align: center;
-  width: 370px;
   flex-wrap: nowrap;
+  justify-content: center;
 }
 .direction-work-photo + .direction-work-photo {
   margin-left: 30px;
 }
 
-.team,
-.activity,
-.direction-work-sections {
-  list-style: none;
-}
 .our-team-section {
   background-color: var(--section-bg-our-team-color);
   font-weight: 700;
@@ -201,6 +210,12 @@ ul {
   margin-top: 0px;
   padding-left: 0;
 }
+.team {
+  display: flex;
+}
+.persona-info {
+  padding: 30px 0;
+}
 .our-team {
   color: var(--title-text-color);
   font-weight: 500;
@@ -209,9 +224,6 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
-  margin-top: 30px;
-  padding-left: 68px;
-  padding-right: 68px;
 }
 .our-team-people {
   border: 2px;
@@ -219,10 +231,11 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
-  display: inline-block;
   background-color: var(--primary-bg-color);
 }
-
+.our-team-people + .our-team-people {
+  margin-left: 30px;
+}
 .our-team-professions {
   font-size: 16px;
   line-height: 1.2;
@@ -246,7 +259,6 @@ ul {
 
 .footer-address {
   color: var(--primary-bg-color);
-  margin-top: 20px;
 }
 .footer-address-italic {
   font-style: normal;
@@ -254,6 +266,7 @@ ul {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  margin-top: 20px;
 }
 
 .footer-contacts {
@@ -263,7 +276,7 @@ ul {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-.footer-link-nav + .footer-link-nav {
+.footer-link-nav {
   margin-top: 9px;
 }
 /* portfolio styles */
